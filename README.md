@@ -1,6 +1,5 @@
-# AvevaMES
-AvevaMES demo
+# AVEVAMES
+AVEVA MES Integration Template
 
-This project demonstates the integration of Simio planning with Aveva MES and SAP.
-See the document SimioProductionSchedulingAvevaMESInterface.docx document under the Documents folder for more information.
+This project is an integration template that provide the integration between Simio and AVEVA MES.  See the document SimioProductionSchedulingAvevaMESInterface.docx document under the Documents folder for more information.
 
