@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RunSimioPortalExperiment.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EventFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Temp\\Event.txt</Value>
+    </Setting>
+    <Setting Name="StatusFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Temp\\Status.txt</Value>
+    </Setting>
+    <Setting Name="ClearStatusBeforeEachRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DeleteStatusBeforeEachRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PersonalAccessToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RetryResultsIntervalSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="RetryResultsMaxAttempts" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="AuthenticationType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Domain" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RunSchedule" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RunScheduleRiskAnalysis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ProjectName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AVEVAMES</Value>
+    </Setting>
+    <Setting Name="RunSchedulePlanScenarioName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AVEVAMESSched</Value>
+    </Setting>
+    <Setting Name="RunExperimentExptRunDesc" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PublishName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AVEVAMESSchedPub</Value>
+    </Setting>
+    <Setting Name="PublishDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AVEVAMESSchedPubDesc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

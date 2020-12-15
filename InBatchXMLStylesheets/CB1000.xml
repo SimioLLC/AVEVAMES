@@ -1,0 +1,1399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BatchInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.wbf.org/xml/B2MML-V0401">
+  <MasterRecipe>
+    <ID>CB1000</ID>
+    <Description />
+    <Header>
+      <ModificationLog>
+        <ModifiedDate>2016-09-26T14:01:17</ModifiedDate>
+        <Description>First attempt at chicken breading recipe.</Description>
+        <Author>Glen Wirth</Author>
+        <VersionState xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Production</VersionState>
+        <VersionType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Production</VersionType>
+      </ModificationLog>
+      <ModificationLog>
+        <ModifiedDate>2016-10-11T13:28:45</ModifiedDate>
+        <Description />
+        <Author>GW</Author>
+        <VersionState xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Production</VersionState>
+        <VersionType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Production</VersionType>
+      </ModificationLog>
+      <ApprovalHistory>
+        <IndividualApproval />
+        <IndividualApproval />
+        <IndividualApproval />
+        <IndividualApproval />
+        <IndividualApproval />
+      </ApprovalHistory>
+      <ApprovalHistory>
+        <IndividualApproval />
+        <IndividualApproval />
+        <IndividualApproval />
+        <IndividualApproval />
+        <IndividualApproval />
+      </ApprovalHistory>
+      <ProductID />
+      <ProductName>Wonder Breading</ProductName>
+      <BatchSize>
+        <Nominal>5000</Nominal>
+        <Min>1000</Min>
+        <Max>5000</Max>
+      </BatchSize>
+      <ApprovedForProduction xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">false</ApprovedForProduction>
+      <ApprovedForTest xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">false</ApprovedForTest>
+    </Header>
+    <EquipmentRequirement>
+      <ID>BulkTks</ID>
+      <ProcessInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+        <Name>BulkTks</Name>
+        <Unit />
+        <UnitSelectionMode>Auto</UnitSelectionMode>
+      </ProcessInstance>
+    </EquipmentRequirement>
+    <EquipmentRequirement>
+      <ID>HoldTks</ID>
+      <ProcessInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+        <Name>HoldTks</Name>
+        <Unit />
+        <UnitSelectionMode>Auto</UnitSelectionMode>
+      </ProcessInstance>
+    </EquipmentRequirement>
+    <EquipmentRequirement>
+      <ID>Mixers</ID>
+      <ProcessInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+        <Name>Mixers</Name>
+        <Unit />
+        <UnitSelectionMode>Auto</UnitSelectionMode>
+      </ProcessInstance>
+    </EquipmentRequirement>
+    <Formula>
+      <Parameter>
+        <ID>1</ID>
+        <ParameterType>ProcessInput</ParameterType>
+        <Value>
+          <ValueString>5.000000</ValueString>
+          <DataInterpretation>Equation</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Kgs</UnitOfMeasure>
+        </Value>
+        <MaterialID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">CS102</MaterialID>
+        <Total xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">true</Total>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">1</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">1</LowDeviation>
+      </Parameter>
+      <Parameter>
+        <ID>2</ID>
+        <ParameterType>ProcessInput</ParameterType>
+        <Value>
+          <ValueString>80.000000</ValueString>
+          <DataInterpretation>Equation</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Kgs</UnitOfMeasure>
+        </Value>
+        <MaterialID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Flour100</MaterialID>
+        <Total xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">true</Total>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">1</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">1</LowDeviation>
+      </Parameter>
+      <Parameter>
+        <ID>3</ID>
+        <ParameterType>ProcessInput</ParameterType>
+        <Value>
+          <ValueString>15.000000</ValueString>
+          <DataInterpretation>Equation</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Kgs</UnitOfMeasure>
+        </Value>
+        <MaterialID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Salt200</MaterialID>
+        <Total xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">true</Total>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">1</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">1</LowDeviation>
+      </Parameter>
+      <Parameter>
+        <ID>4</ID>
+        <ParameterType>ProcessOutput</ParameterType>
+        <Value>
+          <ValueString>100.000000</ValueString>
+          <DataInterpretation>Equation</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Kgs</UnitOfMeasure>
+        </Value>
+        <MaterialID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">CS102</MaterialID>
+        <Total xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">true</Total>
+      </Parameter>
+      <Parameter>
+        <ID>5</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>40.000000</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">2</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>6</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>10.000000</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">7</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>7</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>0.0</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">8</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>8</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>0.0</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">11</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>9</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>0.0</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">14</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Speed</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>10</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>2.0000000</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">2</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>11</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>2.0000000</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">7</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>12</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>2.0000000</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">8</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>13</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>0.0</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">11</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</PhaseParameter>
+      </Parameter>
+      <Parameter>
+        <ID>14</ID>
+        <ParameterType>ProcessParameter</ParameterType>
+        <Value>
+          <ValueString>15.000000</ValueString>
+          <DataInterpretation>Constant</DataInterpretation>
+          <DataType>double</DataType>
+          <UnitOfMeasure>Minutes</UnitOfMeasure>
+        </Value>
+        <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</Name>
+        <ToleranceType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">General</ToleranceType>
+        <HighDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</HighDeviation>
+        <LowDeviation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">0</LowDeviation>
+        <ProcessVariableType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Process</ProcessVariableType>
+        <Label xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">14</Label>
+        <ParentInstance xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mixers</ParentInstance>
+        <Phase xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Mix</Phase>
+        <PhaseParameter xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Time</PhaseParameter>
+      </Parameter>
+    </Formula>
+    <ProcedureLogic>
+      <Link>
+        <ID>17</ID>
+        <FromID>
+          <FromIDValue>16</FromIDValue>
+          <FromType>Step</FromType>
+          <IDScope>Internal</IDScope>
+        </FromID>
+        <ToID>
+          <ToIDValue>44</ToIDValue>
+          <ToType>Step</ToType>
+          <IDScope>Internal</IDScope>
+        </ToID>
+        <LinkType>ControlLink</LinkType>
+        <Depiction>Line</Depiction>
+      </Link>
+      <Link>
+        <ID>45</ID>
+        <FromID>
+          <FromIDValue>44</FromIDValue>
+          <FromType>Step</FromType>
+          <IDScope>Internal</IDScope>
+        </FromID>
+        <ToID>
+          <ToIDValue>77</ToIDValue>
+          <ToType>Step</ToType>
+          <IDScope>Internal</IDScope>
+        </ToID>
+        <LinkType>ControlLink</LinkType>
+        <Depiction>Line</Depiction>
+      </Link>
+      <Link>
+        <ID>78</ID>
+        <FromID>
+          <FromIDValue>77</FromIDValue>
+          <FromType>Step</FromType>
+          <IDScope>Internal</IDScope>
+        </FromID>
+        <ToID>
+          <ToIDValue>99</ToIDValue>
+          <ToType>Step</ToType>
+          <IDScope>Internal</IDScope>
+        </ToID>
+        <LinkType>ControlLink</LinkType>
+        <Depiction>Line</Depiction>
+      </Link>
+      <Link>
+        <ID>100</ID>
+        <FromID>
+          <FromIDValue>99</FromIDValue>
+          <FromType>Step</FromType>
+          <IDScope>Internal</IDScope>
+        </FromID>
+        <ToID>
+          <ToIDValue>102</ToIDValue>
+          <ToType>Step</ToType>
+          <IDScope>Internal</IDScope>
+        </ToID>
+        <LinkType>ControlLink</LinkType>
+        <Depiction>Line</Depiction>
+      </Link>
+      <Step>
+        <ID>16</ID>
+        <RecipeElementID>15</RecipeElementID>
+        <RecipeElementVersion>0</RecipeElementVersion>
+      </Step>
+      <Step>
+        <ID>44</ID>
+        <RecipeElementID>18</RecipeElementID>
+        <RecipeElementVersion>0</RecipeElementVersion>
+      </Step>
+      <Step>
+        <ID>77</ID>
+        <RecipeElementID>46</RecipeElementID>
+        <RecipeElementVersion>0</RecipeElementVersion>
+      </Step>
+      <Step>
+        <ID>99</ID>
+        <RecipeElementID>79</RecipeElementID>
+        <RecipeElementVersion>0</RecipeElementVersion>
+      </Step>
+      <Step>
+        <ID>102</ID>
+        <RecipeElementID>101</RecipeElementID>
+        <RecipeElementVersion>0</RecipeElementVersion>
+      </Step>
+    </ProcedureLogic>
+    <RecipeElement>
+      <ID>15</ID>
+      <RecipeElementType>Begin</RecipeElementType>
+    </RecipeElement>
+    <RecipeElement>
+      <ID>18</ID>
+      <RecipeElementType>UnitProcedure</RecipeElementType>
+      <ProcedureLogic>
+        <Link>
+          <ID>21</ID>
+          <FromID>
+            <FromIDValue>20</FromIDValue>
+            <FromType>Step</FromType>
+            <IDScope>Internal</IDScope>
+          </FromID>
+          <ToID>
+            <ToIDValue>40</ToIDValue>
+            <ToType>Step</ToType>
+            <IDScope>Internal</IDScope>
+          </ToID>
+          <LinkType>ControlLink</LinkType>
+          <Depiction>Line</Depiction>
+        </Link>
+        <Link>
+          <ID>41</ID>
+          <FromID>
+            <FromIDValue>40</FromIDValue>
+            <FromType>Step</FromType>
+            <IDScope>Internal</IDScope>
+          </FromID>
+          <ToID>
+            <ToIDValue>43</ToIDValue>
+            <ToType>Step</ToType>
+            <IDScope>Internal</IDScope>
+          </ToID>
+          <LinkType>ControlLink</LinkType>
+          <Depiction>Line</Depiction>
+        </Link>
+        <Step>
+          <ID>20</ID>
+          <RecipeElementID>19</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+        <Step>
+          <ID>40</ID>
+          <RecipeElementID>22</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+        <Step>
+          <ID>43</ID>
+          <RecipeElementID>42</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+      </ProcedureLogic>
+      <RecipeElement>
+        <ID>19</ID>
+        <RecipeElementType>Begin</RecipeElementType>
+      </RecipeElement>
+      <RecipeElement>
+        <ID>22</ID>
+        <RecipeElementType>Operation</RecipeElementType>
+        <ProcedureLogic>
+          <Link>
+            <ID>25</ID>
+            <FromID>
+              <FromIDValue>24</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>28</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <ToID>
+              <ToIDValue>5</ToIDValue>
+              <ToType>Transition</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <ToID>
+              <ToIDValue>37</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ParallelDivergent</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>26</ID>
+            <FromID>
+              <FromIDValue>31</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <FromID>
+              <FromIDValue>35</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <FromID>
+              <FromIDValue>37</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>39</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ParallelConvergent</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>29</ID>
+            <FromID>
+              <FromIDValue>28</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>31</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ControlLink</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>33</ID>
+            <FromID>
+              <FromIDValue>5</FromIDValue>
+              <FromType>Transition</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>35</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ControlLink</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Step>
+            <ID>24</ID>
+            <RecipeElementID>23</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>28</ID>
+            <RecipeElementID>27</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>31</ID>
+            <RecipeElementID>30</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>35</ID>
+            <RecipeElementID>34</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>37</ID>
+            <RecipeElementID>36</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>39</ID>
+            <RecipeElementID>38</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Transition>
+            <ID>5</ID>
+            <Condition>WaitMin(1)</Condition>
+            <Description />
+            <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">5</Name>
+          </Transition>
+        </ProcedureLogic>
+        <RecipeElement>
+          <ID>23</ID>
+          <RecipeElementType>Begin</RecipeElementType>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>27</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Qty_Kgs</ID>
+            <ParameterType>ProcessInput</ParameterType>
+            <Value>
+              <ValueString>40.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">2</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>3</Label>
+            <PhaseType>Transfer</PhaseType>
+            <Name>BulkAdd</Name>
+            <ParentInstance>Bulk_Mix</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>30</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Qty_Kgs</ID>
+            <ParameterType>ProcessInput</ParameterType>
+            <Value>
+              <ValueString>15.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">3</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>4</Label>
+            <PhaseType>Transfer</PhaseType>
+            <Name>BulkAdd</Name>
+            <ParentInstance>Bulk_Mix</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>34</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Qty</ID>
+            <ParameterType>ProcessInput</ParameterType>
+            <Value>
+              <ValueString>5.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">1</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>1</Label>
+            <PhaseType>Process</PhaseType>
+            <Name>ManAdd</Name>
+            <ParentInstance>Mixers</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>36</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Speed</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">5</FormulaParameterID>
+          </Parameter>
+          <Parameter>
+            <ID>Time</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">10</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>2</Label>
+            <PhaseType>Process</PhaseType>
+            <Name>Mix</Name>
+            <ParentInstance>Mixers</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>38</ID>
+          <RecipeElementType>End</RecipeElementType>
+        </RecipeElement>
+        <OperationInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+          <Name>Add Materials</Name>
+        </OperationInformation>
+      </RecipeElement>
+      <RecipeElement>
+        <ID>42</ID>
+        <RecipeElementType>End</RecipeElementType>
+      </RecipeElement>
+      <UnitProcedureInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+        <Name>Add Materials</Name>
+        <ProcessInstance>Mixers</ProcessInstance>
+      </UnitProcedureInformation>
+    </RecipeElement>
+    <RecipeElement>
+      <ID>46</ID>
+      <RecipeElementType>UnitProcedure</RecipeElementType>
+      <ProcedureLogic>
+        <Link>
+          <ID>49</ID>
+          <FromID>
+            <FromIDValue>48</FromIDValue>
+            <FromType>Step</FromType>
+            <IDScope>Internal</IDScope>
+          </FromID>
+          <ToID>
+            <ToIDValue>73</ToIDValue>
+            <ToType>Step</ToType>
+            <IDScope>Internal</IDScope>
+          </ToID>
+          <LinkType>ControlLink</LinkType>
+          <Depiction>Line</Depiction>
+        </Link>
+        <Link>
+          <ID>74</ID>
+          <FromID>
+            <FromIDValue>73</FromIDValue>
+            <FromType>Step</FromType>
+            <IDScope>Internal</IDScope>
+          </FromID>
+          <ToID>
+            <ToIDValue>76</ToIDValue>
+            <ToType>Step</ToType>
+            <IDScope>Internal</IDScope>
+          </ToID>
+          <LinkType>ControlLink</LinkType>
+          <Depiction>Line</Depiction>
+        </Link>
+        <Step>
+          <ID>48</ID>
+          <RecipeElementID>47</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+        <Step>
+          <ID>73</ID>
+          <RecipeElementID>50</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+        <Step>
+          <ID>76</ID>
+          <RecipeElementID>75</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+      </ProcedureLogic>
+      <RecipeElement>
+        <ID>47</ID>
+        <RecipeElementType>Begin</RecipeElementType>
+      </RecipeElement>
+      <RecipeElement>
+        <ID>50</ID>
+        <RecipeElementType>Operation</RecipeElementType>
+        <ProcedureLogic>
+          <Link>
+            <ID>53</ID>
+            <FromID>
+              <FromIDValue>52</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>56</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <ToID>
+              <ToIDValue>58</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ParallelDivergent</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>54</ID>
+            <FromID>
+              <FromIDValue>56</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <FromID>
+              <FromIDValue>58</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>60</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ParallelConvergent</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>61</ID>
+            <FromID>
+              <FromIDValue>60</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>63</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ControlLink</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>64</ID>
+            <FromID>
+              <FromIDValue>63</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>10</ToIDValue>
+              <ToType>Transition</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <ToID>
+              <ToIDValue>12</ToIDValue>
+              <ToType>Transition</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ParallelDivergent</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>65</ID>
+            <FromID>
+              <FromIDValue>10</FromIDValue>
+              <FromType>Transition</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <FromID>
+              <FromIDValue>70</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>72</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ParallelConvergent</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>68</ID>
+            <FromID>
+              <FromIDValue>12</FromIDValue>
+              <FromType>Transition</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>70</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ControlLink</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Step>
+            <ID>52</ID>
+            <RecipeElementID>51</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>56</ID>
+            <RecipeElementID>55</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>58</ID>
+            <RecipeElementID>57</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>60</ID>
+            <RecipeElementID>59</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>63</ID>
+            <RecipeElementID>62</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>70</ID>
+            <RecipeElementID>69</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>72</ID>
+            <RecipeElementID>71</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Transition>
+            <ID>10</ID>
+            <Condition>Ask("Test OK?")</Condition>
+            <Description />
+            <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">10</Name>
+          </Transition>
+          <Transition>
+            <ID>12</ID>
+            <Condition>Ask("Mix Again")</Condition>
+            <Description />
+            <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">12</Name>
+          </Transition>
+        </ProcedureLogic>
+        <RecipeElement>
+          <ID>51</ID>
+          <RecipeElementType>Begin</RecipeElementType>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>55</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Qty_Kgs</ID>
+            <ParameterType>ProcessInput</ParameterType>
+            <Value>
+              <ValueString>40.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">2</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>6</Label>
+            <PhaseType>Transfer</PhaseType>
+            <Name>BulkAdd</Name>
+            <ParentInstance>Bulk_Mix</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>57</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Speed</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">6</FormulaParameterID>
+          </Parameter>
+          <Parameter>
+            <ID>Time</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">11</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>7</Label>
+            <PhaseType>Process</PhaseType>
+            <Name>Mix</Name>
+            <ParentInstance>Mixers</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>59</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Speed</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">7</FormulaParameterID>
+          </Parameter>
+          <Parameter>
+            <ID>Time</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">12</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>8</Label>
+            <PhaseType>Process</PhaseType>
+            <Name>Mix</Name>
+            <ParentInstance>Mixers</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>62</ID>
+          <Description>Take a sample for QA Test.  Wait for results.</Description>
+          <RecipeElementType>Phase</RecipeElementType>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>9</Label>
+            <PhaseType>Process</PhaseType>
+            <Name>Instruct</Name>
+            <ParentInstance>Mixers</ParentInstance>
+            <OperatorAcknowledgmentModes>8</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>69</ID>
+          <Description>Enter Spped and Time, then Acknowledge.</Description>
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Speed</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">8</FormulaParameterID>
+          </Parameter>
+          <Parameter>
+            <ID>Time</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">13</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>11</Label>
+            <PhaseType>Process</PhaseType>
+            <Name>Mix</Name>
+            <ParentInstance>Mixers</ParentInstance>
+            <OperatorAcknowledgmentModes>1</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>71</ID>
+          <RecipeElementType>End</RecipeElementType>
+        </RecipeElement>
+        <OperationInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+          <Name>Mix Materials</Name>
+        </OperationInformation>
+      </RecipeElement>
+      <RecipeElement>
+        <ID>75</ID>
+        <RecipeElementType>End</RecipeElementType>
+      </RecipeElement>
+      <UnitProcedureInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+        <Name>Mix Materials</Name>
+        <ProcessInstance>Mixers</ProcessInstance>
+      </UnitProcedureInformation>
+    </RecipeElement>
+    <RecipeElement>
+      <ID>79</ID>
+      <RecipeElementType>UnitProcedure</RecipeElementType>
+      <ProcedureLogic>
+        <Link>
+          <ID>82</ID>
+          <FromID>
+            <FromIDValue>81</FromIDValue>
+            <FromType>Step</FromType>
+            <IDScope>Internal</IDScope>
+          </FromID>
+          <ToID>
+            <ToIDValue>95</ToIDValue>
+            <ToType>Step</ToType>
+            <IDScope>Internal</IDScope>
+          </ToID>
+          <LinkType>ControlLink</LinkType>
+          <Depiction>Line</Depiction>
+        </Link>
+        <Link>
+          <ID>96</ID>
+          <FromID>
+            <FromIDValue>95</FromIDValue>
+            <FromType>Step</FromType>
+            <IDScope>Internal</IDScope>
+          </FromID>
+          <ToID>
+            <ToIDValue>98</ToIDValue>
+            <ToType>Step</ToType>
+            <IDScope>Internal</IDScope>
+          </ToID>
+          <LinkType>ControlLink</LinkType>
+          <Depiction>Line</Depiction>
+        </Link>
+        <Step>
+          <ID>81</ID>
+          <RecipeElementID>80</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+        <Step>
+          <ID>95</ID>
+          <RecipeElementID>83</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+        <Step>
+          <ID>98</ID>
+          <RecipeElementID>97</RecipeElementID>
+          <RecipeElementVersion>0</RecipeElementVersion>
+        </Step>
+      </ProcedureLogic>
+      <RecipeElement>
+        <ID>80</ID>
+        <RecipeElementType>Begin</RecipeElementType>
+      </RecipeElement>
+      <RecipeElement>
+        <ID>83</ID>
+        <RecipeElementType>Operation</RecipeElementType>
+        <ProcedureLogic>
+          <Link>
+            <ID>86</ID>
+            <FromID>
+              <FromIDValue>85</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>88</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ControlLink</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>89</ID>
+            <FromID>
+              <FromIDValue>88</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>91</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ControlLink</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Link>
+            <ID>92</ID>
+            <FromID>
+              <FromIDValue>91</FromIDValue>
+              <FromType>Step</FromType>
+              <IDScope>Internal</IDScope>
+            </FromID>
+            <ToID>
+              <ToIDValue>94</ToIDValue>
+              <ToType>Step</ToType>
+              <IDScope>Internal</IDScope>
+            </ToID>
+            <LinkType>ControlLink</LinkType>
+            <Depiction>Line</Depiction>
+          </Link>
+          <Step>
+            <ID>85</ID>
+            <RecipeElementID>84</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>88</ID>
+            <RecipeElementID>87</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>91</ID>
+            <RecipeElementID>90</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+          <Step>
+            <ID>94</ID>
+            <RecipeElementID>93</RecipeElementID>
+            <RecipeElementVersion>0</RecipeElementVersion>
+          </Step>
+        </ProcedureLogic>
+        <RecipeElement>
+          <ID>84</ID>
+          <RecipeElementType>Begin</RecipeElementType>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>87</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Speed</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">9</FormulaParameterID>
+          </Parameter>
+          <Parameter>
+            <ID>Time</ID>
+            <ParameterType>ProcessParameter</ParameterType>
+            <Value>
+              <ValueString>0.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">14</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>14</Label>
+            <PhaseType>Process</PhaseType>
+            <Name>Mix</Name>
+            <ParentInstance>Mixers</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>90</ID>
+          <Description />
+          <RecipeElementType>Phase</RecipeElementType>
+          <Parameter>
+            <ID>Qty_Kgs</ID>
+            <ParameterType>ProcessOutput</ParameterType>
+            <Value>
+              <ValueString>100.000000</ValueString>
+              <DataInterpretation>Constant</DataInterpretation>
+              <DataType>double</DataType>
+              <UnitOfMeasure />
+            </Value>
+            <FormulaParameterID xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">4</FormulaParameterID>
+          </Parameter>
+          <PhaseInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+            <Label>13</Label>
+            <PhaseType>Transfer</PhaseType>
+            <Name>Transfer</Name>
+            <ParentInstance>Mix_Hold</ParentInstance>
+            <OperatorAcknowledgmentModes>0</OperatorAcknowledgmentModes>
+            <OperatorCommentRequired>false</OperatorCommentRequired>
+            <Report />
+            <AppendDescription>false</AppendDescription>
+            <ContinueMode>false</ContinueMode>
+            <DocumentViewType>None</DocumentViewType>
+            <DocumentViewPath />
+            <DocumentViewDescription />
+          </PhaseInformation>
+        </RecipeElement>
+        <RecipeElement>
+          <ID>93</ID>
+          <RecipeElementType>End</RecipeElementType>
+        </RecipeElement>
+        <OperationInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+          <Name>Discharge</Name>
+        </OperationInformation>
+      </RecipeElement>
+      <RecipeElement>
+        <ID>97</ID>
+        <RecipeElementType>End</RecipeElementType>
+      </RecipeElement>
+      <UnitProcedureInformation xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+        <Name>Discharge</Name>
+        <ProcessInstance>Mixers</ProcessInstance>
+      </UnitProcedureInformation>
+    </RecipeElement>
+    <RecipeElement>
+      <ID>101</ID>
+      <RecipeElementType>End</RecipeElementType>
+    </RecipeElement>
+    <Name xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">Chicken Breading</Name>
+    <EquipmentTransfer xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+      <Name>Bulk_Mix</Name>
+      <Source>BulkTks</Source>
+      <Destination>Mixers</Destination>
+      <TransferInstance>
+        <Name>Bulk_Mix</Name>
+        <Source>BulkTks</Source>
+        <Destination>Mixers</Destination>
+      </TransferInstance>
+    </EquipmentTransfer>
+    <EquipmentTransfer xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+      <Name>Mix_Hold</Name>
+      <Source>Mixers</Source>
+      <Destination>HoldTks</Destination>
+      <TransferInstance>
+        <Name>Mix_Hold</Name>
+        <Source>Mixers</Source>
+        <Destination>HoldTks</Destination>
+      </TransferInstance>
+    </EquipmentTransfer>
+    <RecipeState xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+      <Name>Production</Name>
+      <Description />
+      <DefaultState>true</DefaultState>
+      <Schedule>true</Schedule>
+      <ReadOnly>false</ReadOnly>
+    </RecipeState>
+    <RecipeType xmlns="http://www.wbf.org/xml/B2MML-V0401-AllExtensions">
+      <Name>Production</Name>
+      <Description />
+      <DefaultType>true</DefaultType>
+    </RecipeType>
+  </MasterRecipe>
+</BatchInformation>
