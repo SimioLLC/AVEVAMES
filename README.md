@@ -1,5 +1,5 @@
 # AVEVAMES
-AVEVA MES Integration Template
+AVEVA MES Integration Templates
 
-This project is an integration template that provide the integration between Simio and AVEVA MES.  See the document SimioProductionSchedulingAvevaMESInterface.docx document under the Documents folder for more information.
+This project are integration templatse that provide the integration between Simio and AVEVA MES.  See the document SimioProductionSchedulingAvevaMESInterface.docx document under the Documents folder for more information.
 
