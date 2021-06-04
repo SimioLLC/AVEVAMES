@@ -1,4 +1,4 @@
-﻿using RestSharp;
+using RestSharp;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -104,7 +104,7 @@ namespace RunSimioPortalExperiment
                     logStatus("Deleting Event File", Properties.Settings.Default.ClearStatusBeforeEachRun);
                     File.Delete(Properties.Settings.Default.EventFile);
 
-                    if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false || Properties.Settings.Default.AuthenticationType.ToLower() != "none")
+                    if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false && Properties.Settings.Default.AuthenticationType.ToLower() != "none")
                     {
                         logStatus("Set Credentials");
                         setCredentials();
@@ -166,7 +166,7 @@ namespace RunSimioPortalExperiment
             var client = new RestClient(_url + "/api/RequestToken");
             client.Timeout = -1;
             var request = new RestRequest(Method.POST);
-            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false || Properties.Settings.Default.AuthenticationType.ToLower() != "none")
+            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false && Properties.Settings.Default.AuthenticationType.ToLower() != "none")
             {
                 if (_useDefaultCredentials)
                 {
@@ -198,7 +198,7 @@ namespace RunSimioPortalExperiment
             var request = new RestRequest(Method.POST);
             request.AddHeader("Content-Type", "multipart/form-data");
             request.AddHeader("Authorization", "Bearer " + _token);
-            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false || Properties.Settings.Default.AuthenticationType.ToLower() != "none")
+            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false && Properties.Settings.Default.AuthenticationType.ToLower() != "none")
             {
                 if (_useDefaultCredentials)
                 {
@@ -251,7 +251,7 @@ namespace RunSimioPortalExperiment
             var request = new RestRequest(Method.POST);
             request.AddHeader("Content-Type", "multipart/form-data");
             request.AddHeader("Authorization", "Bearer " + _token);
-            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false || Properties.Settings.Default.AuthenticationType.ToLower() != "none")
+            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false && Properties.Settings.Default.AuthenticationType.ToLower() != "none")
             {
                 if (_useDefaultCredentials)
                 {
@@ -288,7 +288,7 @@ namespace RunSimioPortalExperiment
             var request = new RestRequest(Method.POST);
             request.AddHeader("Content-Type", "multipart/form-data");
             request.AddHeader("Authorization", "Bearer " + _token);
-            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false || Properties.Settings.Default.AuthenticationType.ToLower() != "none")
+            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false && Properties.Settings.Default.AuthenticationType.ToLower() != "none")
             {
                 if (_useDefaultCredentials)
                 {
@@ -367,7 +367,7 @@ namespace RunSimioPortalExperiment
             var request = new RestRequest(Method.POST);
             request.AddHeader("Content-Type", "multipart/form-data");
             request.AddHeader("Authorization", "Bearer " + _token);
-            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false || Properties.Settings.Default.AuthenticationType.ToLower() != "none")
+            if (String.IsNullOrWhiteSpace(Properties.Settings.Default.AuthenticationType) == false && Properties.Settings.Default.AuthenticationType.ToLower() != "none")
             {
                 if (_useDefaultCredentials)
                 {
@@ -526,3 +526,4 @@ namespace RunSimioPortalExperiment
         }
     }
 }
+
